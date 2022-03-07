@@ -62,6 +62,7 @@ class RadioTest {
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
     }
+
     @Test
     public void nextStation_1() {
 
@@ -89,6 +90,7 @@ class RadioTest {
         int actual = rad.getCurrentRadioStation();
         assertEquals(expected, actual);
     }
+
     @Test
     public void prevStation_1() {
 
@@ -116,6 +118,7 @@ class RadioTest {
         int actual = rad.getCurrentRadioStation();
         assertEquals(expected, actual);
     }
+
     @Test
     public void currentStation_1() {
 
