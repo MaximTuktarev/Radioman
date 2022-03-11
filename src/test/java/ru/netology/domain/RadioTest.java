@@ -82,11 +82,11 @@ class RadioTest {
 
         Radio rad = new Radio();
 
-        rad.currentRadioStation = 5;
+        rad.currentRadioStation = 8;
         rad.nextStation();
 
 
-        int expected = 6;
+        int expected = 9;
         int actual = rad.getCurrentRadioStation();
         assertEquals(expected, actual);
     }
