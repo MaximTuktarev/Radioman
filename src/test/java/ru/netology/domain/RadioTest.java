@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class RadioTest {
     Radio smart_radio = new Radio();
+    Radio smart_radio2 = new Radio(10);
 
     @Test
     public void increaseVolume() {
@@ -67,8 +68,13 @@ public class RadioTest {
         smart_radio.setCurrentStation(8);
         smart_radio.nextStation();
 
-
         assertEquals(9, smart_radio.getCurrentRadioStation());
+
+        smart_radio2.setCurrentStation(7);
+        smart_radio2.nextStation();
+
+        assertEquals(8, smart_radio2.getCurrentRadioStation());
+
     }
 
     @Test
@@ -111,6 +117,7 @@ public class RadioTest {
         smart_radio.setCurrentStation(15);
 
         assertEquals(9, smart_radio.getCurrentRadioStation());
+
 
     }
 

@@ -2,8 +2,6 @@ package ru.netology.domain;
 
 public class Radio {
     private String name = "Smart-Radio";
-    //private int firstStation = 0;
-    //private int lastStation = 9;
     private int quantityOfStations = 10;
     private int currentRadioStation;
     private int minVolume = 0;
@@ -14,16 +12,9 @@ public class Radio {
     public Radio() {
     }
 
-
-    // public Radio(String name, int quantityOfStations, int currentRadioStation, int minVolume, int maxVolume, int currentVolume) {
-    // this.name = name;
-    // this.quantityOfStations = quantityOfStations;
-    //this.currentRadioStation = currentRadioStation;
-    // this.minVolume = minVolume;
-    //this.maxVolume = maxVolume;
-    // this.currentVolume = currentVolume;
-    // }
-
+    public Radio(int quantityOfStations) {
+        this.quantityOfStations = quantityOfStations - 1;
+    }
 
     public int getCurrentRadioStation() {
         return currentRadioStation;
@@ -37,7 +28,6 @@ public class Radio {
     public int getLastStation() {
         return quantityOfStations - 1;
     }
-
 
     public void increaseVolume() {
 
