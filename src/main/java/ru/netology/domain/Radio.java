@@ -13,7 +13,7 @@ public class Radio {
     }
 
     public Radio(int quantityOfStations) {
-        this.quantityOfStations = quantityOfStations - 1;
+        this.quantityOfStations = quantityOfStations;
     }
 
     public int getCurrentRadioStation() {

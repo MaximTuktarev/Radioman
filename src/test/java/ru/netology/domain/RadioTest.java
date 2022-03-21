@@ -70,10 +70,10 @@ public class RadioTest {
 
         assertEquals(9, smart_radio.getCurrentRadioStation());
 
-        smart_radio2.setCurrentStation(7);
+        smart_radio2.setCurrentStation(8);
         smart_radio2.nextStation();
 
-        assertEquals(8, smart_radio2.getCurrentRadioStation());
+        assertEquals(9, smart_radio2.getCurrentRadioStation());
 
     }
 
